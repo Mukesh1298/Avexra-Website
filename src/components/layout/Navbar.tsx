@@ -104,9 +104,42 @@ export default function Navbar() {
 					</div>
 				</div>
 
-				{/* CTA */}
-				<div className="flex items-center gap-4 pr-1">
-					{/* <Link
+          {/* ✅ SOLUTIONS (FIXED) */}
+          <div
+            className=""
+            onMouseEnter={openSolutions}
+            onMouseLeave={closeSolutions}
+          >
+            <span
+  className={`
+    px-5 py-2 text-sm font-medium cursor-pointer
+    transition-all rounded-full shadow-sm
+    ${
+      solutionsOpen
+        ? "bg-white text-slate-900 shadow"
+        : "text-slate-600 hover:bg-white hover:text-slate-900 hover:shadow"
+    }
+  `}
+>
+  Solutions
+</span>
+
+
+            {/* 🔽 Mega Menu INSIDE same hover zone */}
+            {solutionsOpen && (
+              <div
+                onMouseEnter={openSolutions}
+                onMouseLeave={closeSolutions}
+              >
+                <SolutionsMegaMenu />
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="flex items-center gap-4 pr-1">
+          {/* <Link
             href="#"
             className="hidden lg:block text-sm font-medium text-slate-600 hover:text-primary transition-colors"
           >

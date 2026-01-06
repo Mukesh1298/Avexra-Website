@@ -239,20 +239,21 @@ html {
 .social-icon {
   @apply text-slate-400 hover:text-primary transition-colors;
 }
-.custom-scrollbar::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
+/* Hide scrollbar for Chrome, Safari and Edge */
+::-webkit-scrollbar {
+  display: none;
 }
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f5f9;
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
 }
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
 }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
+
 /* .grid-bg {
   background-size: 40px 40px;
   background-image: linear-gradient(to right, #ebf1f7 1px, transparent 1px),
