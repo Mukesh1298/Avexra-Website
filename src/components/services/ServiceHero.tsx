@@ -61,7 +61,7 @@ export default function ServiceHero({ hero, slug }: ServiceHeroProps) {
 						{hero.description.map((para, i) => (
 							<p
 								key={i}
-								className="text-slate-600 text-lg lg:text-xl font-normal leading-relaxed text-justify"
+								className="text-slate-600 text-lg lg:text-xl font-normal leading-relaxed text-center"
 							>
 								{para}
 							</p>
