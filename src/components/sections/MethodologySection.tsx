@@ -38,7 +38,7 @@ export default function MethodologySection() {
         <section className="w-full px-4 md:px-10 py-10 relative overflow-hidden z-10">
           <div className="max-w-[1280px] mx-auto">
             <div className="hidden lg:grid grid-cols-4 gap-8 relative py-10">
-              <div className="absolute top-1/2 left-0 w-full h-[2px] bg-slate-200 rounded-full bg-border-light -translate-y-1/2 z-0"></div>
+              <div className="absolute top-1/2 left-0 w-full h-[2px] rounded-full bg-border-light -translate-y-1/2 z-0"></div>
               <div className="absolute top-1/2 left-0 w-[100%] h-[2px] bg-gradient-to-r from-transparent via-primary to-background-light wire-path -translate-y-1/2 z-0 shadow-[0_0_10px_rgba(112,128,144,0.5)]"></div>
 
               {methodologySteps.map((step, index) => {
@@ -78,11 +78,9 @@ export default function MethodologySection() {
                     </div>
 
                     <div
-                      className={`absolute ${
-                        isTop ? "top-1/2 mt-6" : "bottom-1/2 mb-6"
-                      } h-20 w-[1px] ${
-                        isTop ? "bg-gradient-to-b" : "bg-gradient-to-t"
-                      } from-primary to-transparent -z-10`}
+                      className={`absolute ${isTop ? "top-1/2 mt-6" : "bottom-1/2 mb-6"
+                        } h-20 w-[1px] ${isTop ? "bg-gradient-to-b" : "bg-gradient-to-t"
+                        } from-primary to-transparent -z-10`}
                     />
 
                     {!isTop && (
