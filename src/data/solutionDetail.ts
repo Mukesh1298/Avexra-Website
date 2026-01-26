@@ -1,8 +1,8 @@
-import { SolutionData } from "@/types/solution"
+import { SolutionDetail } from "@/types/solution"
 import { image } from "framer-motion/client";
 import { text } from "stream/consumers";
 
-export const solutionDetail: SolutionData[] = [
+export const solutionDetails: SolutionDetail[] = [
 
     //Business intelligence
     {
@@ -51,7 +51,7 @@ export const solutionDetail: SolutionData[] = [
             exampletitle: "Example: Revenue Analysis",
             description:
                   "Ask 'Show me the correlation between marketing   spend and customer retention by RegexIcon.' ",
-           image:""
+           image:"/services/usecases/image1.png"
            }
         ],
     
@@ -139,7 +139,7 @@ export const solutionDetail: SolutionData[] = [
             exampletitle: "Example: Intelligent Routing",
             description:
            "A logic-based system that parses incoming data, determines intent, and executes corresponding API calls across your tech stack without human intervention.",
-           image:""
+           image:"/services/usecases/image1.png"
            }
         ],
     
@@ -180,7 +180,7 @@ export const solutionDetail: SolutionData[] = [
     // AI -powered Platforms
     
     {
-        slug: "AI-powered Platforms",
+        slug: "ai-powered Platforms",
         hero:{
             titleParts: [
                  {text: "  AI-powered Platforms"},
@@ -225,7 +225,7 @@ export const solutionDetail: SolutionData[] = [
             exampletitle: "Developer Experience",
             description:
            "Simple installation, intuitive CLI, and a powerful dashboard to monitor your AI instances in real-time",
-           image:""
+           image:"/services/usecases/image1.png"
            }
         ],
     
@@ -267,7 +267,7 @@ export const solutionDetail: SolutionData[] = [
     // Reaseach and Advanced AI
 
     {
-        slug: "Research & Advanced AI",
+        slug: "research & Advanced AI",
         hero:{
             titleParts: [
                  {text: " Research & Advanced AI"},
@@ -312,7 +312,7 @@ export const solutionDetail: SolutionData[] = [
             exampletitle: "Synaptic Mapping v4",
             description:
            "Our visualization engine renders millions of neural connections in real-time, showing how the AI processes and synthesizes information.",
-           image:""
+           image:"/services/usecases/image1.png"
            }
         ],
     

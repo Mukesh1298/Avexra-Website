@@ -25,7 +25,7 @@ export default function SolutionBestfor({
 				</div>
 
 				{/* Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 					{bestfor.map((bestFor, index) => (
 						<div
 							key={index}

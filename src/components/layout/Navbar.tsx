@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import SolutionsMegaMenu from "./SolutionsMegaMenu";
+
+
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function Navbar() {
     { label: "Services", href: "/services" },
     { label: "Blogs", href: "/blogs" },
     { label: "About Us", href: "/about" },
+    {label: "Solutions" , href: "/solutions"}
   ];
 
   const openSolutions = () => {
@@ -63,8 +65,8 @@ export default function Navbar() {
                 </Link>
               );
             })}
-
-            {/* SOLUTIONS */}
+          </div>
+            {/* SOLUTIONS 
             <div
               className=""
               onMouseEnter={openSolutions}
@@ -80,7 +82,7 @@ export default function Navbar() {
 
               {solutionsOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4">
-                  <SolutionsMegaMenu />
+                  <SolutionDetailPage />
                 </div>
               )}
             </div>
@@ -133,23 +135,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* MOBILE SOLUTIONS */}
-            <button
-              onClick={() => setSolutionsOpen(!solutionsOpen)}
-              className="flex justify-between items-center px-3 py-2 rounded-md hover:bg-slate-100"
-            >
-              Solutions
-              <span className="material-symbols-outlined">
-                {solutionsOpen ? "expand_less" : "expand_more"}
-              </span>
-            </button>
-
-            {solutionsOpen && (
-              <div className="pl-3">
-                <SolutionsMegaMenu />
-              </div>
-            )}
-
+            
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}

@@ -1,4 +1,4 @@
-export interface SolutionData {
+export interface SolutionDetail {
 	slug: string;
 
 	hero: {

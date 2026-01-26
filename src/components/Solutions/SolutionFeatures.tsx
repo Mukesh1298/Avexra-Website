@@ -29,7 +29,7 @@ export default function SolutionFeature({
 				</div>
 
 				{/* Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+				<div className="grid md:grid-cols-3 gap-8">
 					{feature.map((feature, index) => (
 						<div
 							key={index}
@@ -38,7 +38,7 @@ export default function SolutionFeature({
 							{/* Icon */}
 							<div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center text-blue-600 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
 								<span
-									className="material-symbols-outlined"
+									className="material-symbols-outlined "
 									style={{
 										fontVariationSettings: "'wght' 400, 'opsz' 24",
 									}}
