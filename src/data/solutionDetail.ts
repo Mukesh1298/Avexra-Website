@@ -51,7 +51,7 @@ export const solutionDetails: SolutionDetail[] = [
             exampletitle: "Example: Revenue Analysis",
             description:
                   "Ask 'Show me the correlation between marketing   spend and customer retention by RegexIcon.' ",
-           image:"/services/usecases/image1.png"
+           image:""
            }
         ],
     
@@ -139,7 +139,7 @@ export const solutionDetails: SolutionDetail[] = [
             exampletitle: "Example: Intelligent Routing",
             description:
            "A logic-based system that parses incoming data, determines intent, and executes corresponding API calls across your tech stack without human intervention.",
-           image:"/services/usecases/image1.png"
+           image:""
            }
         ],
     
@@ -225,7 +225,7 @@ export const solutionDetails: SolutionDetail[] = [
             exampletitle: "Developer Experience",
             description:
            "Simple installation, intuitive CLI, and a powerful dashboard to monitor your AI instances in real-time",
-           image:"/services/usecases/image1.png"
+           image:""
            }
         ],
     
@@ -312,7 +312,7 @@ export const solutionDetails: SolutionDetail[] = [
             exampletitle: "Synaptic Mapping v4",
             description:
            "Our visualization engine renders millions of neural connections in real-time, showing how the AI processes and synthesizes information.",
-           image:"/services/usecases/image1.png"
+           image:""
            }
         ],
     
