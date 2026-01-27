@@ -19,6 +19,7 @@ export default function Navbar() {
     { label: "Services", href: "/services" },
     { label: "Blogs", href: "/blogs" },
     { label: "About Us", href: "/about" },
+    //{label: "Solutions" , href: "/solutions"}
   ];
 
   const openSolutions = () => {
@@ -63,20 +64,21 @@ export default function Navbar() {
                 </Link>
               );
             })}
-
+          
             {/* SOLUTIONS */}
             <div
               className=""
               onMouseEnter={openSolutions}
               onMouseLeave={closeSolutions}
             >
-              <span
+              <Link
+              href= "/solutions"
                 className={`px-5 py-2 text-sm font-medium rounded-full cursor-pointer transition
                   ${isSolutionsActive ? "bg-white shadow text-black" : "hover:bg-white hover:shadow"}
                 `}
               >
                 Solutions
-              </span>
+              </Link>
 
               {solutionsOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4">
@@ -133,23 +135,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* MOBILE SOLUTIONS */}
-            <button
-              onClick={() => setSolutionsOpen(!solutionsOpen)}
-              className="flex justify-between items-center px-3 py-2 rounded-md hover:bg-slate-100"
-            >
-              Solutions
-              <span className="material-symbols-outlined">
-                {solutionsOpen ? "expand_less" : "expand_more"}
-              </span>
-            </button>
-
-            {solutionsOpen && (
-              <div className="pl-3">
-                <SolutionsMegaMenu />
-              </div>
-            )}
-
+            
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}

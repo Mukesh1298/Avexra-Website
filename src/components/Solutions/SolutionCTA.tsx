@@ -4,7 +4,7 @@ interface TitlePart {
 	highlight?: boolean;
 }
 
-interface ServiceCTAProps {
+interface SolutionCTAProps {
 	cta: {
 		titleParts: TitlePart[];
 		description: string;
@@ -13,7 +13,7 @@ interface ServiceCTAProps {
 	};
 }
 
-export default function ServiceCTA({ cta }: ServiceCTAProps) {
+export default function SolutionCTA({ cta }: SolutionCTAProps) {
 	return (
 		<section className="py-24 px-4 relative overflow-hidden">
 			{/* background layers */}
